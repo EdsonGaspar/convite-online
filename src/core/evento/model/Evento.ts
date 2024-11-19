@@ -1,3 +1,5 @@
+import Convidado from "./Convidado";
+
 export interface Evento {
   id: string; //UUID
   alias: string; //aniversario-edson-2025
@@ -9,4 +11,5 @@ export interface Evento {
   imagem: string;
   imagemBackground: string;
   publicoEsperado: number;
+  convidados: Convidado[];
 }
