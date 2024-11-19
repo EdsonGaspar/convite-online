@@ -9,5 +9,7 @@ export function CriarEventoVazio(): Partial<Evento> {
     data: new Date(),
     local: "",
     publicoEsperado: 1,
+    imagem: "",
+    imagemBackground: "",
   };
 }
