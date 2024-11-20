@@ -10,9 +10,9 @@ export default function PaginaEvento() {
       {eventos.map((evento) => (
         <div
           key={evento.id}
-          className="flex flex-col bg-slate-800 rounded-md overflow-hidden w-full"
+          className="flex flex-col text-center bg-slate-800 rounded-md overflow-hidden w-full"
         >
-          <div className="relative w-full h-44">
+          <div className="relative w-full h-52">
             <Image
               src={evento.imagem}
               fill
@@ -21,9 +21,7 @@ export default function PaginaEvento() {
             />
           </div>
           <div className="flex-1 flex flex-col items-center gap-5 p-7">
-            <span className="text-lg text-center font-black">
-              {evento.nome}
-            </span>
+            <span className="text-lg font-black">{evento.nome}</span>
             <p className="flex-1 text-sm text-zinc-400">{evento.descricao}</p>
 
             {/* Implementação do Qr-Code */}
@@ -40,7 +38,7 @@ export default function PaginaEvento() {
                 Admin
               </Link>
               <Link
-                href={`/evento/${evento.alias}`}
+                href={`/convite/${evento.alias}`}
                 className="flex-1 botao verde"
               >
                 Convite
