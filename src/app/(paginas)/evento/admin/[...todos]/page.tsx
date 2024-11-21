@@ -33,7 +33,7 @@ export default function PaginaAdminEvento(props: any) {
 
   return (
     <div className="flex flex-col items-center">
-      {evento ? <DashBoardEvento /> : <FormSenhaEvento />}
+      {evento ? <DashBoardEvento evento={evento} /> : <FormSenhaEvento />}
     </div>
   );
 
